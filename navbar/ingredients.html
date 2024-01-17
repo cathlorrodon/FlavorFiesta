@@ -47,6 +47,32 @@ nav {
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
+    .clickable-box {
+        background-color: rgb(212, 153, 64);
+        border: 2px solid rgb(255, 241, 112);
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        width: 250px;
+        height: 300px;
+        margin: 23px;
+        float: left;
+    }
+
+    .clickable-box img {
+        max-width: 60%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    .clickable-box h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 35px;
+        color: rgb(255, 241, 112);
+        -webkit-text-stroke: 1px black;
+    }
     
 </style>
 </head>
@@ -65,6 +91,25 @@ nav {
 
     <div class = "content" id ="ingredients-section">
         <h2>Ingredients</h2>
+        <div class="clickable-box" onclick="window.location='chickeningredients.html'">
+            <img src="chicken.png" alt="Description of the image">
+            <h3>CHICKEN</h3>
+        </div>
+
+        <div class="clickable-box" onclick="window.location='porkingredients.html'">
+            <img src="pork.png" alt="Description of the image">
+            <h3>PORK</h3>
+        </div>
+
+        <div class="clickable-box" onclick="window.location='beefingredients.html'">
+            <img src="beef.png" alt="Description of the image">
+            <h3>BEEF</h3>
+        </div>
+
+        <div class="clickable-box" onclick="window.location='fishingredients.html'">
+            <img src="fish.png" alt="Description of the image">
+            <h3>FISH</h3>
+        </div>
 
   
     </div>
