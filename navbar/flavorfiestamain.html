@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlavorFiesta</title>
+<style>
+body {
+background-color: rgb(255, 241, 112);
+color: black;
+}
+
+header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    color: rgb(212, 153, 64);
+    -webkit-text-stroke: 1px black;
+}
+
+nav {
+        text-align: center;
+        text-decoration: solid;
+        border: 2px solid rgb(241, 150, 29);
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .navbar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        background-color: rgb(212, 153, 64);
+        
+    }
+
+    .navbar a {
+        color: rgb(255, 241, 112);
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 60px;
+        cursor: pointer;
+    }
+
+    #home-section {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #home-section h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(212, 153, 64);
+        font-size: 58px;
+    }
+    
+    .clickable-box {
+        background-color: rgb(212, 153, 64);
+        border: 2px solid rgb(255, 241, 112);
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        width: 193px;
+        margin: 20px;
+        float: left;
+    }
+
+    .clickable-box img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+</style>
+</head>
+
+<body>
+    <div class = "header-container"> 
+        <header><b>FlavorFiesta</b><header>
+    </div>
+    
+    <nav class="navbar">
+        <a href="flavorfiestamain.html">Home</a>
+        <a href="allrecipes.html">All Recipes</a>
+        <a href="updatednewrecipes.html">Updated Recipes</a>
+        <a href="ingredients.html">Ingredients</a>
+    </nav>
+
+    <div class="content" id="home-section">
+        <h1>Welcome to FlavorFiesta!</h1>
+        <div class="clickable-box" onclick="window.location='mechado.html'">
+            <img src="Mechado.jpg" alt="Description of the image">
+            <h2>Mechadong Baboy</h2>
+            <p>Mechadong Baboy or Pork mechado is a type of Filipino pork stew. It is cooked in a tomato-based sauce. </p>
+            </div>
+
+        <div class="clickable-box" onclick="window.location='adobongbaboy.html'">
+            <img src="Adobo.jpg" alt="Description of the image">
+            <h2>Adobong Baboy</h2>
+            <p>It is a dish composed of pork slices cooked in soy sauce, vinegar, and garlic. Popular dish in PH.</p>
+        </div>
+
+        <div class="clickable-box" onclick="window.location='tinolangmanok.html'">
+            <img src="Tinola.jpg" alt="Description of the image">
+            <h2>Tinolang Manok</h2>
+            <p>A great tasting and healthy dish to prepare. It is easy to cook and friendly on the budget.</p>
+            </div>
+
+        <div class="clickable-box" onclick="window.location='cordonbleu.html'">
+            <img src="Cordon.jpg" alt="Description of the image">
+            <h2>Cordon Bleu</h2>
+            <p>A dish composed of chicken breasts, ham, and Swiss cheese.
+                Rolled together then dredged in bread crumbs.
+            </p>
+        </div>
+
+        <div class="clickable-box" onclick="window.location='dynamite.html'">
+            <img src="Dynamite.jpg" alt="Description of the image">
+            <h2>Dynamite Lumpia</h2>
+            <p>A version of the popular Filipino deep-fried egg rolls. 
+                It involves the use of stuffed long green chili.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
