@@ -6,8 +6,8 @@
 <title>FlavorFiesta</title>
 <style>
 body {
-background-color: rgb(255, 241, 112);
-color: black;
+    background-color: rgb(255, 241, 112);
+    color: black;
 }
 
 header {
@@ -19,41 +19,73 @@ header {
 }
 
 nav {
-        text-align: center;
-        text-decoration: solid;
-        border: 2px solid rgb(241, 150, 29);
-        padding: 10px;
-        border-radius: 15px;
-    }
+    text-align: center;
+    text-decoration: solid;
+    border: 2px solid rgb(241, 150, 29);
+    padding: 10px;
+    border-radius: 15px;
+}
 
-    .navbar {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 25px;
-        background-color: rgb(212, 153, 64);
-        
-    }
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    background-color: rgb(212, 153, 64);
+}
 
-    .navbar a {
-        color: rgb(255, 241, 112);
-        text-decoration: none;
-        display: inline-block;
-        margin: 0 60px;
-        cursor: pointer;
-    }
+.navbar a {
+    color: rgb(255, 241, 112);
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 60px;
+    cursor: pointer;
+}
 
-    #updatednewrecipes-section h2{
-        color: rgb(212, 153, 64);
-        font-size: 40px;
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
+#updatednewrecipes-section h2 {
+    color: rgb(212, 153, 64);
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#updatednewrecipes-section h3 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-box {
+    border: 2px solid rgb(241, 150, 29);
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.image-box img {
+    max-width: 40%;
+    float: left; 
+    margin-right: 20px;
+    height: auto;
+}
+
+.image-box p {
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+
+
 </style>
 </head>
 
 <body>
-    <div class = "header-container"> 
-        <header><b>FlavorFiesta</b><header>
+    <div class="header-container"> 
+        <header><b>FlavorFiesta</b></header>
     </div>
     
     <nav class="navbar">
@@ -63,10 +95,16 @@ nav {
         <a href="ingredients.html">Ingredients</a>
     </nav>
 
-    <div class = "content" id ="updatednewrecipes-section">
+    <div class="content" id="updatednewrecipes-section">
         <h2>Updated/New Recipes</h2>
 
-  
+        <div class="image-container">
+            <div class="image-box">
+                <a href="Crispy Pata.html"><img src="Crispy Pata.jpg" alt="Crispy Pata"></a>
+                <h3>Crispy Pata</h3>
+                <p>Crispy Pata or crispy pork leg is a popular Filipino pork dish. This dish can be eaten as a main dish along with rice and atcharang papaya.</p>
+            </div>
+        </div>
     </div>
 </body>
 
