@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHICKEN - FlavorFiesta</title>
+    <style>
+        body {
+            background-color: rgb(255, 241, 112);
+            color: black;
+        }
+
+        header {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 45px;
+            color: rgb(212, 153, 64);
+            -webkit-text-stroke: 1px black;
+        }
+
+        nav {
+            text-align: center;
+            text-decoration: solid;
+            border: 2px solid rgb(241, 150, 29);
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .navbar {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            background-color: rgb(212, 153, 64);        
+        }
+
+        .navbar a {
+            color: rgb(255, 241, 112);
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 60px;
+            cursor: pointer;
+        }
+
+        #chickendish h2 {
+            color: rgb(212, 153, 64);
+            font-size: 40px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #chickendish ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            padding: 0;
+            list-style-type: none;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #chickendish a {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(212, 153, 64);
+            background-color: rgb(255, 241, 112);
+            padding: 20px;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            #chickendish ul {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container"> 
+        <header><b>FlavorFiesta</b></header>
+    </div>
+    
+    <nav class="navbar">
+        <a href="flavorfiestamain.html">Home</a>
+        <a href="allrecipes.html">All Recipes</a>
+        <a href="updatednewrecipes.html">Updated Recipes</a>
+        <a href="ingredients.html">Ingredients</a>
+    </nav>
+
+    <div class="content" id="chickendish">
+        <h2>CHICKEN DISH</h2>
+        <ul>
+            <li><a href="chickenadobo.html">Chicken Adobo</a></li>
+            <li><a href="chickenadobowithegg.html">Chicken Adobo with Egg</a></li>
+            <li><a href="chickenafritada.html">Chicken Afritada</a></li>
+            <li><a href="chickenasado.html">Chicken Asado</a></li>
+            <li><a href="chickenhamonado.html">Chicken Hamonado</a></li>
+            <li><a href="chickenkatsu.html">Chicken Katsu</a></li>
+            <li><a href="chickenpochero.html">Chicken Pochero</a></li>
+            <li><a href="chickensalpicao.html">Chicken Salpicao</a></li>
+            <li><a href="chickentinola.html">Chicken Tinola</a></li>
+            <li><a href="friedchicken.html">Fried Chicken</a></li>
+            <li><a href="ginataangmanok.html">Ginataang Manok</a></li>
+            <li><a href="grilledchickenadobo.html">Grilled Chicken Adobo</a></li>
+            <li><a href="kalderetangmanok.html">Kalderetang Manok</a></li>
+            <li><a href="nilagangmanok.html">Nilagang Manok</a></li>
+            <li><a href="pininyahangmanok.html">Pininyahang Manok</a></li>
+            <li><a href="sinampalukangmanok.html">Sinampalukang Manok</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
