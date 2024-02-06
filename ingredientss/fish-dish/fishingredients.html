@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISH - FlavorFiesta</title>
+    <style>
+        body {
+            background-color: rgb(255, 241, 112);
+            color: black;
+        }
+
+        header {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 45px;
+            color: rgb(212, 153, 64);
+            -webkit-text-stroke: 1px black;
+        }
+
+        nav {
+            text-align: center;
+            text-decoration: solid;
+            border: 2px solid rgb(241, 150, 29);
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .navbar {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            background-color: rgb(212, 153, 64);        
+        }
+
+        .navbar a {
+            color: rgb(255, 241, 112);
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 60px;
+            cursor: pointer;
+        }
+
+        #fishdish h2 {
+            color: rgb(212, 153, 64);
+            font-size: 40px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #fishdish ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            padding: 0;
+            list-style-type: none;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #fishdish a {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(212, 153, 64);
+            background-color: rgb(255, 241, 112);
+            padding: 20px;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            #fishdish ul {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container"> 
+        <header><b>FlavorFiesta</b></header>
+    </div>
+    
+    <nav class="navbar">
+        <a href="flavorfiestamain.html">Home</a>
+        <a href="allrecipes.html">All Recipes</a>
+        <a href="updatednewrecipes.html">Updated Recipes</a>
+        <a href="ingredients.html">Ingredients</a>
+    </nav>
+
+    <div class="content" id="fishdish">
+        <h2>FISH DISH</h2>
+        <ul>
+            <li><a href="malasugi.html">Malasugi</a></li>
+            <li><a href="bakefish.html">Bake Fish</a></li>
+            <li><a href="fishtacos.html">Fish Tacos</a></li>
+            <li><a href="bangussisig.html">Bangus Sisig</a></li>
+            <li><a href="Fish Lumpia.html">Fish Lumpia</a></li>
+            <li><a href="Fried Tilapia.html">Fried Tilapia</a></li>
+            <li><a href="fishsarciado.html">Fish Sarciado</a></li>
+            <li><a href="fishsinigang.html">Fish Sinigang</a></li>
+            <li><a href="friedfish.html">Fried Fish </a></li>
+            <li><a href="tinolangisda.html">Tinolang Isda</a></li>
+            <li><a href="Tochong Bangus.html">Tochong Bangus</a></li>
+            <li><a href="ginataanghito.html">Ginataang Hito</a></li>
+            <li><a href="ginataangtilapia.html">Ginataang Tilapia</a></li>
+            <li><a href="fishheadcurry.html">Fish Head Curry</a></li>
+            <li><a href="fishkarekare.html">Fish Kare Kare</a></li>
+            <li><a href="inihawnabangus.html">Inihaw na Bangus</a></li>
+            <li><a href="paksiwnabangus.html">Paksiw na Bangus</a></li>
+            <li><a href="pinaputoknatilapia.html">Pinaputok na Tilapia</a></li>
+            <li><a href="sarciadongdaing.html">Sarciadong Daing</a></li>
+            <li><a href="sweetandsour.html">Sweet and Sour Fish</a></li>
+            <li><a href="glazedsalmon.html">Easy Glazed Salmon</a></li>
+            <li><a href="goldenbakewhitefish.html">Golden Baked Whitefish</a></li>
+            <li><a href="goldenfishcake.html">Golden Fish Cakes</a></li>
+            <li><a href="goldencatfish.html">Golden Catfish Fillets</a></li>
+            <li><a href="halibutsofttacos.html">Halibut Soft Tacos</a></li>
+            <li><a href="tilapiaflorentine.html">Tilapia Florentine</a></li>
+            <li><a href="tunaring.html">Tuna Crescent Ring</a></li>
+            <li><a href="tunazucchini.html">Tuna Zucchini Cakes</a></li>
+            <li><a href="Ginataang Mackerel.html">Ginataang Mackerel</a></li>
+            <li><a href="Grilled Pompano.html">Grilled Pompano</a></li>
+            <li><a href="pinenut.html">Pine Nut-Crusted Tilapia</a></li>
+            <li><a href="tunacake.html">Tuna Cakes with Mustard Mayo</a></li>
+            <li><a href="citruscoconutsteamedcod.html">Citrus Coconut Steamed Cod</a></li>
+            <li><a href="cornmealcrustedcatfish.html">Corn Meal Crusted Catfish</a></li>
+            <li><a href="Sinigang na Bangus sa Bayabas.html">Sinigang na Bangus sa Bayabas</a></li>
+            <li><a href="salmonwithdillsauce.html">Salmon With Dill Sauce & Lemon Risotto</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
