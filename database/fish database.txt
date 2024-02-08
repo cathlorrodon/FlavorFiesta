@@ -1,0 +1,39 @@
+CREATE TABLE recipes (	
+PRIMARY KEY,
+    name VARCHAR(255),
+    url VARCHAR(255),
+    category VARCHAR(50)
+);
+
+ganito example:
+INSERT INTO recipes (name, url, category) 
+VALUES ('Bake Fish', 'bakefish.html', 'fish-dish'),
+	('Bangus Sisig', 'bangussisig.html', 'fish-dish'),
+	('Citrus Coconut Steamed Cod', 'citruscoconutsteamedcod.html', 'fish-dish'),
+	('Corn Meal Crusted Catfish', 'cornmealcrustedcatfish.html', 'fish-dish'),
+	('Spicy Singaporean Fish Head Curry', 'fishheadcurry.html', 'fish-dish'),
+	('Fish Kare-Kare', 'fishkarekare.html', 'fish-dish'),
+	('Fish Sarciado', 'fishsarciado.html', 'fish-dish'),
+	('Fish Sinigang', 'fishsinigang.html', 'fish-dish'),
+	('Easy Fish Tacos', 'fishtacos.html', 'fish-dish'),
+	('Fried Fish', 'friedfish.html', 'fish-dish'),
+	('Ginataang Hito', 'ginataanghito.html', 'fish-dish'),
+	('Ginataang Tilapia', 'ginataangtilapia.html', 'fish-dish'),
+	('Easy Glazed Salmon', 'glazedsalmon.html', 'fish-dish'),
+	('Golden Baked Whitefish', 'goldenbakewhitefish.html', 'fish-dish'),
+	('Golden Catfish Fillets', 'goldencatfish.html', 'fish-dish'),
+	('Golden Fish Cakes', 'goldenfishcake.html', 'fish-dish'),
+	('Halibut Soft Tacos', 'halibutsofttacos.html', 'fish-dish'),
+	('Inihaw na Bangus', 'inihawnabangus.html', 'fish-dish'),
+	('MALASUGI ( SWORDFISH ) KEBAB', 'malasugi.html', 'fish-dish'),
+	('Paksiw na Tyan ng Bangus', 'paksiwnabangus.html', 'fish-dish'),
+	('Pinaputok na Tilapia', 'pinaputoknatilapia.html', 'fish-dish'),
+	('Pine Nut-Crusted Tilapia', 'pinenut.html', 'fish-dish'),
+	('Salmon With Dill Sauce & Lemon Risotto', 'salmonwithdillsauce.html', 'fish-dish'),
+	('Sarciadong Daing', 'sarciadongdaing.html', 'fish-dish'),
+	('Fried Fish With Sweet and Sour Souce', 'sweetandsour.html', 'fish-dish'),
+	('Tilapia Florentine', 'tilapiaflorentine.html', 'fish-dish'),
+	('Tinolang Isda', 'tinolangisda.html', 'fish-dish'),
+	('Tuna Cakes with Mustard Mayo', 'tunacake.html', 'fish-dish'),
+	('Tuna Crescent Ring', 'tunaring.html', 'fish-dish'),
+	('Tuna Zucchini Cakes', 'tunazucchini.html', 'fish-dish');

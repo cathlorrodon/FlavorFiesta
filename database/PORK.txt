@@ -1,0 +1,62 @@
+CREATE TABLE recipes (
+PRIMARY KEY,
+    name VARCHAR(255),
+    url VARCHAR(255),
+    category VARCHAR(50)
+);
+
+INSERT INTO recipes (name, url, category) 
+VALUES ('Bopis', 'Bopis.html', 'pork-dish'),
+	('Igado', 'Igado.html', 'pork-dish'),
+	('Paklay', 'Paklay.html', 'pork-dish'),
+	('Dinuguan', 'Dinuguan.html', 'pork-dish'),
+	('Pork Adobo', 'Pork Adobo.html', 'pork-dish'),
+	('Pork Siomai', 'Pork Siomai.html', 'pork-dish'),
+	('Pork Menudo', 'Pork Menudo.html', 'pork-dish'),
+	('Pork Bistek', 'Pork Bistek.html', 'pork-dish'),
+	('Crispy Pata', 'Crispy Pata.html', 'pork-dish'),
+	('Sisig Paella', 'Sisig Paella.html', 'pork-dish'),
+	('Tokwat Baboy', 'Tokwat Baboy.html', 'pork-dish'),
+	('Pork Afritada', 'Pork Afritada.html', 'pork-dish'),
+	('Pork Salpicao', 'Pork Salpicao.html', 'pork-dish'),
+	('Pork Sinigang', 'Pork Sinigang.html', 'pork-dish'),
+	('Pork Estofado', 'Pork Estofado.html', 'pork-dish'),
+	('Pork Barbecue', 'Pork Barbecue.html', 'pork-dish'),
+	('Mechadong Baboy', 'menudo.html', 'pork-dish'),
+	('Lechon Kawali', 'Lechon Kawali.html', 'pork-dish'),
+	('Pork Caldereta', 'Pork Caldereta.html', 'pork-dish'),
+	('Pork Guisantes', 'Pork Guisantes.html', 'pork-dish'),
+	('Nilagang Baboy', 'Nilagang Baboy.html', 'pork-dish'),
+	('Lechon Sinigang', 'Lechon Sinigang.html', 'pork-dish'),
+	('Pork Belly Asado', 'Pork Belly Asado.html', 'pork-dish'),
+	('Pork Curry Tinola', 'Pork Curry Tinola.html', 'pork-dish'),
+	('Binagoongang Baboy', 'Binagoongang Baboy.html', 'pork-dish'),
+	('Sweet and Sour Pork', 'Sweet and Sour Pork.html', 'pork-dish'),
+	('Skinless Longganisa', 'Skinless Longganisa.html', 'pork-dish'),
+	('Embutido Cordon Bleu', 'Embutido Cordon Bleu.html', 'pork-dish'),
+	('Cheesy Pork Casserole', 'Cheesy Pork Casserole.html', 'pork-dish'),
+	('Sinarsahang Pork Ribs', 'Sinarsahang Pork Ribs.html', 'pork-dish'),
+	('Crispy Pata Dinakdakan', 'Crispy Pata Dinakdakan.html', 'pork-dish'),
+	('Bicol Express Gising-Gising', 'Bicol Express Gising-Gising.html', 'pork-dish'),
+	('Cheesy Lumpiang Shanghai', 'Cheesy Lumpiang Shanghai.html', 'pork-dish'),
+	('Pork Giniling With Oyster Sauce', 'Pork Giniling With Oyster Sauce.html', 'pork-dish'),
+	('Quick and Easy Pan-Fried Pork Chops', 'Quick and Easy Pan-Fried Pork Chops.html', 'pork-dish'),
+	('Grilled Liempo With Barbecue Sauce', 'Grilled Liempo With Barbecue Sauce.html', 'pork-dish');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,64 @@
+CREATE TABLE recipes (
+PRIMARY KEY,
+    name VARCHAR(255),
+    url VARCHAR(255),
+    category VARCHAR(50)
+);
+
+INSERT INTO recipes (name, url, category) 
+VALUES ('Coq au Vin', 'coqAuvin.html', 'chicken-dish'),
+	('Fried Chicken', 'friedchicken.html', 'chicken-dish'),
+	('Chicken Igado', 'Chicken Igado.html', 'chicken-dish'),
+	('Chicken Tinola', 'chickentinola.html', 'chicken-dish'),
+	('Chicken Pochero', 'chickenpochero.html', 'chicken-dish'),
+	('Chicken Adobo', 'chickenadobo.html', 'chicken-dish'),
+	('Chicken Asado', 'chickenasado.html', 'chicken-dish'),
+	('Chicken Katsu', 'chickenkatsu.html', 'chicken-dish'),
+	('Chicken Mechado', 'Chicken Mechado.html', 'chicken-dish'),
+	('Chicken Parmesan', 'chickenParmesan.html', 'chicken-dish'),
+	('Chicken Shawarma', 'chickenShawarma.html', 'chicken-dish'),
+	('Chicken Afritada', 'chickenafritada.html', 'chicken-dish'),
+	('Chicknigang Recipe', 'Chicknigang Recipe.html', 'chicken-dish'),
+	('Chicken Barbecue', 'Chicken Barbecue.html', 'chicken-dish'),
+	('Chicken Hamonado', 'chickenhamonado.html', 'chicken-dish'),
+	('Chicken Salpicao', 'chickensalpicao.html', 'chicken-dish'),
+	('Chicken Alfredo Pasta', 'chickenalfredoPasta.html', 'chicken-dish'),
+	('Nilagang Manok', 'nilagangmanok.html', 'chicken-dish'),
+	('Ginataang Manok', 'ginataangmanok.html', 'chicken-dish'),
+	('Tandoori Chicken', 'tandooriChicken.html', 'chicken-dish'),
+	('Sinampalukang Manok', 'sinampalukangmanok.html', 'chicken-dish'),
+	('Kinamatisang Manok', 'Kinamatisang Manok.html', 'chicken-dish'),
+	('Kalderetang Manok', 'kalderetangmanok.html', 'chicken-dish'),
+	('Pininyahang Manok', 'pininyahangmanok.html', 'chicken-dish'),
+	('Cajun Chicken Pasta', 'cajunchickenPasta.html', 'chicken-dish'),
+	('Mango Salsa Chicken', 'mangosalsaChicken.html', 'chicken-dish'),
+	('Classic Roast Chicken', 'classicroastchicken.html', 'chicken-dish'),
+	('Grilled Chicken Adobo', 'grilledchickenadobo.html', 'chicken-dish'),
+	('Buffalo Chicken Wraps', 'buffalochickenWraps.html', 'chicken-dish'),
+	('Greek Chicken Souvlaki', 'greekchickenSouvlaki.html', 'chicken-dish'),
+	('Chicken Adobo with Egg', 'chickenadobowithegg.html', 'chicken-dish'),
+	('Grilled Lemon Herb Chicken', 'grilledlemonherbChicken.html', 'chicken-dish'),
+	('Chicken and Rice Casserole', 'chickenAndricecasserole.html', 'chicken-dish'),
+	('Lemon Garlic Butter Chicken', 'sesamegingerchickenSalad.html', 'chicken-dish'),
+	('Sesame Ginger Chicken Salad', 'lemongarlicbutterChicken.html', 'chicken-dish'),
+	('Honey Mustard Baked Chicken', 'honeymustardbakedChicken.html', 'chicken-dish');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
