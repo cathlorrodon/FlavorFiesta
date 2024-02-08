@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FlavorFiesta</title>
+    <link rel="stylesheet" href="style_css.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+    .header-container {
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        
+        margin-bottom: 20px;
+    }
+
+    .header-container img {
+        width: 100%;
+        height: 185px;
+        object-fit: cover;
+        
+    }
+
+    nav {
+        text-align: center;
+        text-decoration: solid;
+        border: 3px solid rgb(0, 0, 0);
+        padding: 10px;
+        margin-top: -20px;
+    }
+
+    .navbar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 45px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            font-size: 30px;
+            color: #ff8400;
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            width: 250px;
+            height: 220px;
+            border-radius: 10px; 
+            overflow: hidden;
+            margin: 10px;
+            perspective: 1000px;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        .team-member:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        .team-member .card {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .team-member .card .front,
+        .team-member .card .back,
+        .team-member .card .additional-card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px; 
+        }
+
+        .team-member .card .front {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .team-member .card .back {
+            transform: rotateY(180deg);
+            background-color: rgb(255, 255, 255);;
+            color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .team-member .card .additional-card {
+            transform: rotateY(180deg);
+            background-color: rgb(0, 0, 0);;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <img src="header.jpg" alt="FlavorFiesta Header">
+    </div>
+
+    <video autoplay muted loop id="background-video">
+        <source src="bgv1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="flavorfiestamain.html"><B>Home</B></a>
+        <a href="allrecipes.html"><b>All Recipes</b></a>
+        <a href="updatednewrecipes.html"><b>Updated Recipes</b></a>
+        <a href="ingredients.html"><b>Ingredients</b></a>
+        <a href="about.html"><b>About Us</b></a>
+    </nav>
+
+    <!-- Meet The Team Section -->
+    <h3>ABOUT US</h3>
+    <div class="team-container">
+         <div class="team-member">
+             <div class="card">
+                 <div class="front">
+                     <img src="cabrera.jpg" alt="Profile 1" style="width: 100%; height: 100%; border-radius: 10px;">
+                 </div>
+                 <div class="additional-card">
+                     <div class="info-card">
+                         <p>Danica Mae Cabrera</p>
+                         <p>Role: Developer</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="team-member">
+             <div class="card">
+                 <div class="front">
+                     <img src="nacor.jpg" alt="Profile 2" style="width: 100%; height: 100%; border-radius: 10px;">
+                 </div>
+                 <div class="additional-card">
+                     <div class="info-card">
+                         <p>Alliah Angel Nacor</p>
+                         <p>Role: Developer</p>
+                     </div>
+                    
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="team-member">
+             <div class="card">
+                 <div class="front">
+                     <img src="odon.jpg" alt="Profile 3" style="width: 100%; height: 100%; border-radius: 10px;">
+                 </div>
+                 <div class="additional-card">
+                     <div class="info-card">
+                         <p>Catherine Lorraine Odon</p>
+                         <p>Role: Developer</p>
+                     </div>
+                    
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="team-member">
+             <div class="card">
+                 <div class="front">
+                     <img src="quitalig.jpg" alt="Profile 4" style="width: 100%; height: 100%; border-radius: 10px;">
+                 </div>
+                 <div class="additional-card">
+                     <div class="info-card">
+                         <p>Razell Mae Quitalig</p>
+                         <p>Role: Developer</p>
+                     </div>
+                    
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="team-member">
+             <div class="card">
+                 <div class="front">
+                     <img src="rosario.jpg" alt="Profile 5" style="width: 100%; height: 100%; border-radius: 10px;">
+                 </div>
+                 <div class="additional-card">
+                     <div class="info-card">
+                         <p>Jimwell Rosario</p>
+                         <p>Role: Developer</p>
+                     </div>
+                    
+                 </div>
+             </div>
+         </div>
+ 
+ 
+   
+        <script>
+            function navigateTo(page) {
+                window.location.href = page;
+            }
+        </script>
+
+       
+    </footer>
+</body>
+</html>

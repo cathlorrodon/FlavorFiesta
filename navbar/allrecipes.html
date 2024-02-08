@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
     <title>FlavorFiesta</title>
     <style>
         body {
-            background-color: rgb(255, 241, 112);
-            color: black;
-            margin: 0; /* Remove default margin */
-        }
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-        .header-container {
-            text-align: center;
-            padding: 10px;
-            background-color: rgb(212, 153, 64);
-            border-bottom: 2px solid rgb(241, 150, 29);
-            border-radius: 30px;
-            margin-bottom: 20px;
-        }
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
 
-        .header-container img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 30px; /* Maintain border-radius for consistency */
-        }
+.content {
+    position: relative;
+    z-index: 1;
+}
+    .header-container {
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        
+        margin-bottom: 20px;
+    }
 
-        nav {
-            text-align: center;
-            text-decoration: solid;
-            border: 2px solid rgb(241, 150, 29);
-            padding: 10px;
-            border-radius: 15px;
-        }
+    .header-container img {
+        width: 100%;
+        height: 185px;
+        object-fit: cover;
+        
+    }
 
-        .navbar {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 25px;
-            background-color: rgb(212, 153, 64);
-        }
+    nav {
+        text-align: center;
+        text-decoration: solid;
+        border: 3px solid rgb(0, 0, 0);
+        padding: 10px;
+        margin-top: -20px;
+    }
 
-        .navbar a {
-            color: rgb(255, 241, 112);
-            text-decoration: none;
-            display: inline-block;
-            margin: 0 60px;
-            cursor: pointer;
-        }
+    .navbar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 45px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
         #allrecipes-section h2 {
-            color: rgb(212, 153, 64);
+            color: rgb(255, 255, 255);
             font-size: 40px;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -67,11 +84,11 @@
         }
 
         #allrecipes-section a {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family:Verdana, Geneva, Tahoma, sans-serif,;
             text-decoration: none;
             color: rgb(0, 0, 0);
-            border: 2px solid rgb(212, 153, 64);
-            background-color: rgb(255, 241, 112);
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
             padding: 20px;
             display: block;
             text-align: center;
@@ -89,163 +106,170 @@
 
 <body>
     <div class="header-container">
-        <img src="header.png" alt="FlavorFiesta Header">
+        <img src="header.jpg" alt="FlavorFiesta Header">
     </div>
+
+    <video autoplay muted loop id="background-video">
+        <source src="bgv1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     
     <nav class="navbar">
-        <a href="flavorfiestamain.html">Home</a>
-        <a href="allrecipes.html">All Recipes</a>
-        <a href="updatednewrecipes.html">Updated Recipes</a>
-        <a href="ingredients.html">Ingredients</a>
+        <a href="flavorfiestamain.html"><B>Home</B></a>
+        <a href="allrecipes.html"><b>All Recipes</b></a>
+        <a href="updatednewrecipes.html"><b>Updated Recipes</b></a>
+        <a href="ingredients.html"><b>Ingredients</b></a>
+        <a href="about.html"><b>About Us</b></a>
     </nav>
 
     <div class="content" id="allrecipes-section">
         <h2>All Recipes</h2>
         <ul>
-            <li><a href="bulalo.html">Bulalo</a></li>
-            <li><a href="balbacua.html">Balbacua</a></li>
-            <li><a href="burgersteak.html">Burger Steak</a></li>
-            <li><a href="callos.html">Callos Recipe</a></li>
-            <li><a href="asado.html">Beef Asado</a></li>
-            <li><a href="beef stew.html">Beef Stew</a></li>
-            <li><a href="beef murcon.html">Beef Morcon</a></li>
-            <li><a href="beef stir fry.html">Beef Stir Fry</a></li>
-            <li><a href="beef broccoli.html">Beef Broccoli</a></li>
-            <li><a href="beef salpicao.html">Beef Salpicao </a></li>
-            <li><a href="Beef Kebab">Beef Kebab</a></li>
-            <li><a href="Oxtail Stew.html">Oxtail Stew</a></li>
-            <li><a href="Beef Caldereta.html">Beef Caldereta</a></li>
-            <li><a href="mechado.html">Beef Mechado</a></li>
-            <li><a href="papaitan.html">Beef Papaitan</a></li>
-            <li><a href="empanada.html">Beef Empanadas</a></li>
-            <li><a href="hinalang.html">Beef Hinalang</a></li>
-            <li><a href="stroganoff.html">Beef Stroganoff</a></li>
-            <li><a href="beef pares.html">Beef Pares Lomi</a></li>
-            <li><a href="Beef Pot Roast">Beef Pot Roast</a></li>
-            <li><a href="beef tenderloin.html">Beef Tenderloin</a></li>
-            <li><a href="Mongolian Beef.html">Mongolian Beef</a></li>
-            <li><a href="lengua.html">Lengua Kare-Kare Recipe</a></li>
-            <li><a href="kinamatisan.html">Kinamatisang Baka</a></li>
-            <li><a href="papaitansaampalaya.html">Pinapaitan Sa Ampalaya</a></li>
-            <li><a href="bistek.html">Filipino Style Beef Steak</a></li>
-            <li><a href="garlic pepper beef.html">Garlic Pepper Beef</a></li>
-            <li><a href="beef broccoli with carrots.html">Beef Broccoli with Carrots</a></li>
-            <li><a href="korean beef bbq.html">Korean Beef BBQ (Bulgogi)</a></li>
-            <li><a href="corned beef.html">Corned Beef Guisado With Potato</a></li>
-            <li><a href="creamybeef.html">Creamy Beef With Mushroom</a></li>
-            <li><a href="lasagna.html">Beef Stroganoff Lasagna</a></li>
-            <li><a href="beef mushroom spag.html">Beef Mushroom Spaghetti</a></li>
-            <li><a href="ginisang repolyo and corned beef.html">Ginisang Repolyo and Corned Beef</a></li>
-            <li><a href="corned beef with ampalaya.html">Corned Beef with Ampalaya and Egg</a></li>
-            <li><a href="friednoodles.html">Pan Fried Noodles With Beef And Veggies</a></li>
-            <li><a href="coqAuvin.html">Coq au Vin</a></li>
-            <li><a href="friedchicken.html">Fried Chicken</a></li>
-            <li><a href="Chicken Igado.html">Chicken Igado</a></li>
-            <li><a href="chickentinola.html">Chicken Tinola</a></li>
-            <li><a href="chickenpochero.html">Chicken Pochero</a></li>
-            <li><a href="chickenadobo.html">Chicken Adobo</a></li>
-            <li><a href="chickenasado.html">Chicken Asado</a></li>
-            <li><a href="chickenkatsu.html">Chicken Katsu</a></li>
-            <li><a href="Chicken Mechado.html">Chicken Mechado</a></li>
-            <li><a href="chickenParmesan.html">Chicken Parmesan</a></li>
-            <li><a href="chickenShawarma.html">Chicken Shawarma</a></li>
-            <li><a href="chickenafritada.html">Chicken Afritada</a></li>
-            <li><a href="Chicknigang Recipe.html">Chicknigang Recipe</a></li>
-            <li><a href="Chicken Barbecue.html">Chicken Barbecue</a></li>
-            <li><a href="chickenhamonado.html">Chicken Hamonado</a></li>
-            <li><a href="chickensalpicao.html">Chicken Salpicao</a></li>
-            <li><a href="chickenalfredoPasta.html">Chicken Alfredo Pasta</a></li>
-            <li><a href="nilagangmanok.html">Nilagang Manok</a></li>
-            <li><a href="ginataangmanok.html">Ginataang Manok</a></li>
-            <li><a href="tandooriChicken.html">Tandoori Chicken</a></li>
-            <li><a href="sinampalukangmanok.html">Sinampalukang Manok</a></li>
-            <li><a href="Kinamatisang Manok.html">Kinamatisang Manok</a></li>
-            <li><a href="kalderetangmanok.html">Kalderetang Manok</a></li>
-            <li><a href="pininyahangmanok.html">Pininyahang Manok</a></li>
-            <li><a href="cajunchickenPasta.html">Cajun Chicken Pasta</a></li>
-            <li><a href="mangosalsaChicken.html">Mango Salsa Chicken</a></li>
-            <li><a href="classicroastchicken.html">Classic Roast Chicken</a></li>
-            <li><a href="grilledchickenadobo.html">Grilled Chicken Adobo</a></li>
-            <li><a href="buffalochickenWraps.html">Buffalo Chicken Wraps</a></li>
-            <li><a href="greekchickenSouvlaki.html">Greek Chicken Souvlaki</a></li>
-            <li><a href="chickenadobowithegg.html">Chicken Adobo with Egg</a></li>
-            <li><a href="grilledlemonherbChicken.html">Grilled Lemon Herb Chicken</a></li>
-            <li><a href="chickenAndricecasserole.html">Chicken and Rice Casserole</a></li>
-            <li><a href="lemongarlicbutterChicken.html">Lemon Garlic Butter Chicken</a></li>
-            <li><a href="sesamegingerchickenSalad.html">Sesame Ginger Chicken Salad</a></li>
-            <li><a href="honeymustardbakedChicken.html">Honey Mustard Baked Chicken</a></li>
-            <li><a href="Bopis.html">Bopis</a></li>
-            <li><a href="Igado.html">Igado</a></li>
-            <li><a href="Paklay.html">Paklay</a></li>
-            <li><a href="Dinuguan.html">Dinuguan</a></li>
-            <li><a href="Pork Adobo.html">Pork Adobo</a></li>
-            <li><a href="Pork Siomai.html">Pork Siomai</a></li>
-            <li><a href="Pork Menudo.html">Pork Menudo</a></li>
-            <li><a href="Pork Bistek.html">Pork Bistek</a></li>
-            <li><a href="Crispy Pata.html">Crispy Pata</a></li>
-            <li><a href="Sisig Paella.html">Sisig Paella</a></li>
-            <li><a href="Tokwat Baboy.html">Tokwat Baboy</a></li>
-            <li><a href="Pork Afritada.html">Pork Afritada</a></li>
-            <li><a href="Pork Salpicao.html">Pork Salpicao</a></li>
-            <li><a href="Pork Sinigang.html">Pork Sinigang</a></li>
-            <li><a href="Pork Estofado.html">Pork Estofado </a></li>
-            <li><a href="Pork Barbecue.html">Pork Barbecue</a></li>
-            <li><a href="menudo.html">Mechadong Baboy</a></li>
-            <li><a href="Lechon Kawali.html">Lechon Kawali</a></li>
-            <li><a href="Pork Caldereta.html">Pork Caldereta</a></li>
-            <li><a href="Pork Guisantes.html">Pork Guisantes</a></li>
-            <li><a href="Nilagang Baboy.html">Nilagang Baboy</a></li>
-            <li><a href="Lechon Sinigang.html">Lechon Sinigang</a></li>
-            <li><a href="Pork Belly Asado.html">Pork Belly Asado</a></li>
-            <li><a href="Pork Curry Tinola.html">Pork Curry Tinola</a></li>
-            <li><a href="Binagoongang Baboy.html">Binagoongang Baboy</a></li>
-            <li><a href="Sweet and Sour Pork.html">Sweet and Sour Pork</a></li>
-            <li><a href="Skinless Longganisa.html">Skinless Longganisa</a></li>
-            <li><a href="Embutido Cordon Bleu.html">Embutido Cordon Bleu</a></li>
-            <li><a href="Cheesy Pork Casserole.html">Cheesy Pork Casserole</a></li>
-            <li><a href="Sinarsahang Pork Ribs.html">Sinarsahang Pork Ribs</a></li>
-            <li><a href="Crispy Pata Dinakdakan.html">Crispy Pata Dinakdakan</a></li>
-            <li><a href="Bicol Express Gising-Gising.html">Bicol Express Gising-Gising </a></li>
-            <li><a href="Cheesy Lumpia.html">Cheesy Lumpiang Shanghai</a></li>
-            <li><a href="Pork Giniling With Oyster Sauce.html">Pork Giniling With Oyster Sauce</a></li>
-            <li><a href="Quick and Easy Pan-Fried Pork Chops.html">Quick and Easy Pan-Fried Pork Chops</a></li>
-            <li><a href="Grilled Liempo With Barbecue Sauce.html">Grilled Liempo With Barbecue Sauce</a></li>
-            <li><a href="malasugi.html">Malasugi</a></li>
-            <li><a href="bakefish.html">Bake Fish</a></li>
-            <li><a href="fishtacos.html">Fish Tacos</a></li>
-            <li><a href="bangussisig.html">Bangus Sisig</a></li>
-            <li><a href="Fish Lumpia.html">Fish Lumpia</a></li>
-            <li><a href="Fried Tilapia.html">Fried Tilapia</a></li>
-            <li><a href="fishsarciado.html">Fish Sarciado</a></li>
-            <li><a href="fishsinigang.html">Fish Sinigang</a></li>
-            <li><a href="friedfish.html">Fried Fish </a></li>
-            <li><a href="tinolangisda.html">Tinolang Isda</a></li>
-            <li><a href="Tochong Bangus.html">Tochong Bangus</a></li>
-            <li><a href="ginataanghito.html">Ginataang Hito</a></li>
-            <li><a href="ginataangtilapia.html">Ginataang Tilapia</a></li>
-            <li><a href="fishheadcurry.html">Fish Head Curry</a></li>
-            <li><a href="fishkarekare.html">Fish Kare Kare</a></li>
-            <li><a href="inihawnabangus.html">Inihaw na Bangus</a></li>
-            <li><a href="paksiwnabangus.html">Paksiw na Bangus</a></li>
-            <li><a href="pinaputoknatilapia.html">Pinaputok na Tilapia</a></li>
-            <li><a href="sarciadongdaing.html">Sarciadong Daing</a></li>
-            <li><a href="sweetandsour.html">Sweet and Sour Fish</a></li>
-            <li><a href="glazedsalmon.html">Easy Glazed Salmon</a></li>
-            <li><a href="goldenbakewhitefish.html">Golden Baked Whitefish</a></li>
-            <li><a href="goldenfishcake.html">Golden Fish Cakes</a></li>
-            <li><a href="goldencatfish.html">Golden Catfish Fillets</a></li>
-            <li><a href="halibutsofttacos.html">Halibut Soft Tacos</a></li>
-            <li><a href="tilapiaflorentine.html">Tilapia Florentine</a></li>
-            <li><a href="tunaring.html">Tuna Crescent Ring</a></li>
-            <li><a href="tunazucchini.html">Tuna Zucchini Cakes</a></li>
-            <li><a href="Ginataang Mackerel.html">Ginataang Mackerel</a></li>
-            <li><a href="Grilled Pompano.html">Grilled Pompano</a></li>
-            <li><a href="pinenut.html">Pine Nut-Crusted Tilapia</a></li>
-            <li><a href="tunacake.html">Tuna Cakes with Mustard Mayo</a></li>
-            <li><a href="citruscoconutsteamedcod.html">Citrus Coconut Steamed Cod</a></li>
-            <li><a href="cornmealcrustedcatfish.html">Corn Meal Crusted Catfish</a></li>
-            <li><a href="Sinigang na Bangus sa Bayabas.html">Sinigang na Bangus sa Bayabas</a></li>
-            <li><a href="salmonwithdillsauce.html">Salmon With Dill Sauce & Lemon Risotto</a></li>
+            <li><a href="bulalo.html"><strong>Bulalo</strong></a></li>
+<li><a href="balbacua.html"><strong>Balbacua</strong></a></li>
+<li><a href="burgersteak.html"><strong>Burger Steak</strong></a></li>
+<li><a href="callos.html"><strong>Callos Recipe</strong></a></li>
+<li><a href="asado.html"><strong>Beef Asado</strong></a></li>
+<li><a href="beef stew.html"><strong>Beef Stew</strong></a></li>
+<li><a href="beef murcon.html"><strong>Beef Morcon</strong></a></li>
+<li><a href="beef stir fry.html"><strong>Beef Stir Fry</strong></a></li>
+<li><a href="beef broccoli.html"><strong>Beef Broccoli</strong></a></li>
+<li><a href="beef salpicao.html"><strong>Beef Salpicao</strong></a></li>
+<li><a href="Beef Kebab"><strong>Beef Kebab</strong></a></li>
+<li><a href="Oxtail Stew.html"><strong>Oxtail Stew</strong></a></li>
+<li><a href="Beef Caldereta.html"><strong>Beef Caldereta</strong></a></li>
+<li><a href="mechado.html"><strong>Beef Mechado</strong></a></li>
+<li><a href="papaitan.html"><strong>Beef Papaitan</strong></a></li>
+<li><a href="empanada.html"><strong>Beef Empanadas</strong></a></li>
+<li><a href="hinalang.html"><strong>Beef Hinalang</strong></a></li>
+<li><a href="stroganoff.html"><strong>Beef Stroganoff</strong></a></li>
+<li><a href="beef pares.html"><strong>Beef Pares Lomi</strong></a></li>
+<li><a href="Beef Pot Roast"><strong>Beef Pot Roast</strong></a></li>
+<li><a href="beef tenderloin.html"><strong>Beef Tenderloin</strong></a></li>
+<li><a href="Mongolian Beef.html"><strong>Mongolian Beef</strong></a></li>
+<li><a href="lengua.html"><strong>Lengua Kare-Kare Recipe</strong></a></li>
+<li><a href="kinamatisan.html"><strong>Kinamatisang Baka</strong></a></li>
+<li><a href="papaitansaampalaya.html"><strong>Pinapaitan Sa Ampalaya</strong></a></li>
+<li><a href="bistek.html"><strong>Filipino Style Beef Steak</strong></a></li>
+<li><a href="garlic pepper beef.html"><strong>Garlic Pepper Beef</strong></a></li>
+<li><a href="beef broccoli with carrots.html"><strong>Beef Broccoli with Carrots</strong></a></li>
+<li><a href="korean beef bbq.html"><strong>Korean Beef BBQ (Bulgogi)</strong></a></li>
+<li><a href="corned beef.html"><strong>Corned Beef Guisado With Potato</strong></a></li>
+<li><a href="creamybeef.html"><strong>Creamy Beef With Mushroom</strong></a></li>
+<li><a href="lasagna.html"><strong>Beef Stroganoff Lasagna</strong></a></li>
+<li><a href="beef mushroom spag.html"><strong>Beef Mushroom Spaghetti</strong></a></li>
+<li><a href="ginisang repolyo and corned beef.html"><strong>Ginisang Repolyo and Corned Beef</strong></a></li>
+<li><a href="corned beef with ampalaya.html"><strong>Corned Beef with Ampalaya and Egg</strong></a></li>
+<li><a href="friednoodles.html"><strong>Pan Fried Noodles With Beef And Veggies</strong></a></li>
+<li><a href="coqAuvin.html"><strong>Coq au Vin</strong></a></li>
+<li><a href="friedchicken.html"><strong>Fried Chicken</strong></a></li>
+<li><a href="Chicken Igado.html"><strong>Chicken Igado</strong></a></li>
+<li><a href="chickentinola.html"><strong>Chicken Tinola</strong></a></li>
+<li><a href="chickenpochero.html"><strong>Chicken Pochero</strong></a></li>
+<li><a href="chickenadobo.html"><strong>Chicken Adobo</strong></a></li>
+<li><a href="chickenasado.html"><strong>Chicken Asado</strong></a></li>
+<li><a href="chickenkatsu.html"><strong>Chicken Katsu</strong></a></li>
+<li><a href="Chicken Mechado.html"><strong>Chicken Mechado</strong></a></li>
+<li><a href="chickenParmesan.html"><strong>Chicken Parmesan</strong></a></li>
+<li><a href="chickenShawarma.html"><strong>Chicken Shawarma</strong></a></li>
+<li><a href="chickenafritada.html"><strong>Chicken Afritada</strong></a></li>
+<li><a href="Chicknigang Recipe.html"><strong>Chicknigang Recipe</strong></a></li>
+<li><a href="Chicken Barbecue.html"><strong>Chicken Barbecue</strong></a></li>
+<li><a href="chickenhamonado.html"><strong>Chicken Hamonado</strong></a></li>
+<li><a href="chickensalpicao.html"><strong>Chicken Salpicao</strong></a></li>
+<li><a href="chickenalfredoPasta.html"><strong>Chicken Alfredo Pasta</strong></a></li>
+<li><a href="nilagangmanok.html"><strong>Nilagang Manok</strong></a></li>
+<li><a href="ginataangmanok.html"><strong>Ginataang Manok</strong></a></li>
+<li><a href="tandooriChicken.html"><strong>Tandoori Chicken</strong></a></li>
+<li><a href="sinampalukangmanok.html"><strong>Sinampalukang Manok</strong></a></li>
+<li><a href="Kinamatisang Manok.html"><strong>Kinamatisang Manok</strong></a></li>
+<li><a href="kalderetangmanok.html"><strong>Kalderetang Manok</strong></a></li>
+<li><a href="pininyahangmanok.html"><strong>Pininyahang Manok</strong></a></li>
+<li><a href="cajunchickenPasta.html"><strong>Cajun Chicken Pasta</strong></a></li>
+<li><a href="mangosalsaChicken.html"><strong>Mango Salsa Chicken</strong></a></li>
+<li><a href="classicroastchicken.html"><strong>Classic Roast Chicken</strong></a></li>
+<li><a href="grilledchickenadobo.html"><strong>Grilled Chicken Adobo</strong></a></li>
+<li><a href="buffalochickenWraps.html"><strong>Buffalo Chicken Wraps</strong></a></li>
+<li><a href="greekchickenSouvlaki.html"><strong>Greek Chicken Souvlaki</strong></a></li>
+<li><a href="chickenadobowithegg.html"><strong>Chicken Adobo with Egg</strong></a></li>
+<li><a href="grilledlemonherbChicken.html"><strong>Grilled Lemon Herb Chicken</strong></a></li>
+<li><a href="chickenAndricecasserole.html"><strong>Chicken and Rice Casserole</strong></a></li>
+<li><a href="lemongarlicbutterChicken.html"><strong>Lemon Garlic Butter Chicken</strong></a></li>
+<li><a href="sesamegingerchickenSalad.html"><strong>Sesame Ginger Chicken Salad</strong></a></li>
+<li><a href="honeymustardbakedChicken.html"><strong>Honey Mustard Baked Chicken</strong></a></li>
+<li><a href="Bopis.html"><strong>Bopis</strong></a></li>
+<li><a href="Igado.html"><strong>Igado</strong></a></li>
+<li><a href="Paklay.html"><strong>Paklay</strong></a></li>
+<li><a href="Dinuguan.html"><strong>Dinuguan</strong></a></li>
+<li><a href="Pork Adobo.html"><strong>Pork Adobo</strong></a></li>
+<li><a href="Pork Siomai.html"><strong>Pork Siomai</strong></a></li>
+<li><a href="Pork Menudo.html"><strong>Pork Menudo</strong></a></li>
+<li><a href="Pork Bistek.html"><strong>Pork Bistek</strong></a></li>
+<li><a href="Crispy Pata.html"><strong>Crispy Pata</strong></a></li>
+<li><a href="Sisig Paella.html"><strong>Sisig Paella</strong></a></li>
+<li><a href="Tokwat Baboy.html"><strong>Tokwat Baboy</strong></a></li>
+<li><a href="Pork Afritada.html"><strong>Pork Afritada</strong></a></li>
+<li><a href="Pork Salpicao.html"><strong>Pork Salpicao</strong></a></li>
+<li><a href="Pork Sinigang.html"><strong>Pork Sinigang</strong></a></li>
+<li><a href="Pork Estofado.html"><strong>Pork Estofado</strong></a></li>
+<li><a href="Pork Barbecue.html"><strong>Pork Barbecue</strong></a></li>
+<li><a href="menudo.html"><strong>Mechadong Baboy</strong></a></li>
+<li><a href="Lechon Kawali.html"><strong>Lechon Kawali</strong></a></li>
+<li><a href="Pork Caldereta.html"><strong>Pork Caldereta</strong></a></li>
+<li><a href="Pork Guisantes.html"><strong>Pork Guisantes</strong></a></li>
+<li><a href="Nilagang Baboy.html"><strong>Nilagang Baboy</strong></a></li>
+<li><a href="Lechon Sinigang.html"><strong>Lechon Sinigang</strong></a></li>
+<li><a href="Pork Belly Asado.html"><strong>Pork Belly Asado</strong></a></li>
+<li><a href="Pork Curry Tinola.html"><strong>Pork Curry Tinola</strong></a></li>
+<li><a href="Binagoongang Baboy.html"><strong>Binagoongang Baboy</strong></a></li>
+<li><a href="Sweet and Sour Pork.html"><strong>Sweet and Sour Pork</strong></a></li>
+<li><a href="Skinless Longganisa.html"><strong>Skinless Longganisa</strong></a></li>
+<li><a href="Embutido Cordon Bleu.html"><strong>Embutido Cordon Bleu</strong></a></li>
+<li><a href="Cheesy Pork Casserole.html"><strong>Cheesy Pork Casserole</strong></a></li>
+<li><a href="Sinarsahang Pork Ribs.html"><strong>Sinarsahang Pork Ribs</strong></a></li>
+<li><a href="Crispy Pata Dinakdakan.html"><strong>Crispy Pata Dinakdakan</strong></a></li>
+<li><a href="Bicol Express Gising-Gising.html"><strong>Bicol Express Gising-Gising</strong></a></li>
+<li><a href="Cheesy Lumpia.html"><strong>Cheesy Lumpiang Shanghai</strong></a></li>
+<li><a href="Pork Giniling With Oyster Sauce.html"><strong>Pork Giniling With Oyster Sauce</strong></a></li>
+<li><a href="Quick and Easy Pan-Fried Pork Chops.html"><strong>Quick and Easy Pan-Fried Pork Chops</strong></a></li>
+<li><a href="Grilled Liempo With Barbecue Sauce.html"><strong>Grilled Liempo With Barbecue Sauce</strong></a></li>
+<li><a href="malasugi.html"><strong>Malasugi</strong></a></li>
+<li><a href="bakefish.html"><strong>Bake Fish</strong></a></li>
+<li><a href="fishtacos.html"><strong>Fish Tacos</strong></a></li>
+<li><a href="bangussisig.html"><strong>Bangus Sisig</strong></a></li>
+<li><a href="Fish Lumpia.html"><strong>Fish Lumpia</strong></a></li>
+<li><a href="Fried Tilapia.html"><strong>Fried Tilapia</strong></a></li>
+<li><a href="fishsarciado.html"><strong>Fish Sarciado</strong></a></li>
+<li><a href="fishsinigang.html"><strong>Fish Sinigang</strong></a></li>
+<li><a href="friedfish.html"><strong>Fried Fish</strong></a></li>
+<li><a href="tinolangisda.html"><strong>Tinolang Isda</strong></a></li>
+<li><a href="Tochong Bangus.html"><strong>Tochong Bangus</strong></a></li>
+<li><a href="ginataanghito.html"><strong>Ginataang Hito</strong></a></li>
+<li><a href="ginataangtilapia.html"><strong>Ginataang Tilapia</strong></a></li>
+<li><a href="fishheadcurry.html"><strong>Fish Head Curry</strong></a></li>
+<li><a href="fishkarekare.html"><strong>Fish Kare Kare</strong></a></li>
+<li><a href="inihawnabangus.html"><strong>Inihaw na Bangus</strong></a></li>
+<li><a href="paksiwnabangus.html"><strong>Paksiw na Bangus</strong></a></li>
+<li><a href="pinaputoknatilapia.html"><strong>Pinaputok na Tilapia</strong></a></li>
+<li><a href="sarciadongdaing.html"><strong>Sarciadong Daing</strong></a></li>
+<li><a href="sweetandsour.html"><strong>Sweet and Sour Fish</strong></a></li>
+<li><a href="glazedsalmon.html"><strong>Easy Glazed Salmon</strong></a></li>
+<li><a href="goldenbakewhitefish.html"><strong>Golden Baked Whitefish</strong></a></li>
+<li><a href="goldenfishcake.html"><strong>Golden Fish Cakes</strong></a></li>
+<li><a href="goldencatfish.html"><strong>Golden Catfish Fillets</strong></a></li>
+<li><a href="halibutsofttacos.html"><strong>Halibut Soft Tacos</strong></a></li>
+<li><a href="tilapiaflorentine.html"><strong>Tilapia Florentine</strong></a></li>
+<li><a href="tunaring.html"><strong>Tuna Crescent Ring</strong></a></li>
+<li><a href="tunazucchini.html"><strong>Tuna Zucchini Cakes</strong></a></li>
+<li><a href="Ginataang Mackerel.html"><strong>Ginataang Mackerel</strong></a></li>
+<li><a href="Grilled Pompano.html"><strong>Grilled Pompano</strong></a></li>
+<li><a href="pinenut.html"><strong>Pine Nut-Crusted Tilapia</strong></a></li>
+<li><a href="tunacake.html"><strong>Tuna Cakes with Mustard Mayo</strong></a></li>
+<li><a href="citruscoconutsteamedcod.html"><strong>Citrus Coconut Steamed Cod</strong></a></li>
+<li><a href="cornmealcrustedcatfish.html"><strong>Corn Meal Crusted Catfish</strong></a></li>
+<li><a href="Sinigang na Bangus sa Bayabas.html"><strong>Sinigang na Bangus sa Bayabas</strong></a></li>
+<li><a href="salmonwithdillsauce.html"><strong>Salmon With Dill Sauce & Lemon Risotto</strong></a></li>
+
         </ul>
     </div>
 
