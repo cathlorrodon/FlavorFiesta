@@ -5,102 +5,135 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beef Asado FlavorFiesta</title>
 <style>
-    body {
-    background-color: rgb(255, 241, 112);
-    color: black;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 45px;
-    color: rgb(212, 153, 64);
-    -webkit-text-stroke: 1px black;
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
 }
+
+.content {
+    position: relative;
+    z-index: 1; 
+}
+
+.header-container {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+        
+    margin-bottom: 20px;
+    }
+
+.header-container img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover; 
+    }
 
 nav {
-        text-align: center;
-        text-decoration: solid;
-        border: 2px solid rgb(241, 150, 29);
-        padding: 10px;
-        border-radius: 15px;
+    text-align: center;
+    text-decoration: solid;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: -20px;
     }
 
-    .navbar {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 25px;
-        background-color: rgb(212, 153, 64);
-        
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
     }
 
-    .navbar a {
-        color: rgb(255, 241, 112);
-        text-decoration: none;
-        display: inline-block;
-        margin: 0 60px;
-        cursor: pointer;
-    }
-    #asado-section h2 {
-        color: rgb(212, 153, 64);
-        font-size: 35px;
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 45px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-
-    #asado-section h4 {
-        text-align: center;
-        font-size: 20px;
+#asado-section h2 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    #asado-section h5 {
-        text-align: center;
-        color: rgb(212, 153, 64);
-        font-size: 35px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#asado-section h4 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
     }
 
-    .ingredients {
-        border: 1px solid black;
-        background-color: rgb(223, 166, 82);
-        padding: 20px;
-        max-width: 600px;
-        margin: 0 auto;
+#asado-section h5 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    .ingredients h3 {
-        text-align: center;
-        color: rgb(255, 241, 112);
-        -webkit-text-stroke: 1px black;
-        font-size: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+.ingredients {
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
     }
 
-    .ingredients p {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
+.ingredients h3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    img {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-        height: auto;
-        border: 3px solid rgb(212, 153, 64);
+.ingredients p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+
+#asado-section img {
+    display: block;
+    margin: auto;
+    max-width: 30%;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
     }
 </style>
 </head>
 
 <body>
     <div class="header-container">
-        <header><b>FlavorFiesta</b></header>
+        <img src="header.jpg" alt="FlavorFiesta Header">
     </div>
 
+    <video autoplay muted loop id="background-video">
+        <source src="bgv1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <nav class="navbar">
-        <a href="flavorfiestamain.html">Home</a>
-        <a href="allrecipes.html">All Recipes</a>
-        <a href="updatednewrecipes.html">Updated Recipes</a>
-        <a href="ingredients.html">Ingredients</a>
+        <a href="flavorfiestamain.html"><B>Home</B></a>
+        <a href="allrecipes.html"><b>All Recipes</b></a>
+        <a href="updatednewrecipes.html"><b>Updated Recipes</b></a>
+        <a href="ingredients.html"><b>Ingredients</b></a>
+        <a href="about.html"><b>About Us</b></a>
     </nav>
 
     <div class="content" id="asado-section">
