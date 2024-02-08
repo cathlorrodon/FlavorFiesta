@@ -6,47 +6,63 @@
 <title>FlavorFiesta</title>
 <style>
     body {
-        background-color: rgb(255, 241, 112);
-        color: black;
-        margin: 0;
-    }
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
     .header-container {
         text-align: center;
         padding: 10px;
-        background-color: rgb(212, 153, 64);
-        border-bottom: 2px solid rgb(241, 150, 29);
-        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        
         margin-bottom: 20px;
     }
 
     .header-container img {
         width: 100%;
-        height: 250px;
+        height: 185px;
         object-fit: cover;
-        border-radius: 30px;
+        
     }
 
     nav {
         text-align: center;
         text-decoration: solid;
-        border: 2px solid rgb(241, 150, 29);
+        border: 3px solid rgb(0, 0, 0);
         padding: 10px;
-        border-radius: 15px;
+        margin-top: -20px;
     }
 
     .navbar {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 25px;
-        background-color: rgb(212, 153, 64);
+        background-color: rgb(255, 255, 255);
     }
 
     .navbar a {
-        color: rgb(255, 241, 112);
+        color: rgb(0, 0, 0);
         text-decoration: none;
         display: inline-block;
-        margin: 0 60px;
+        margin: 0 45px;
         cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     #home-section {
@@ -56,13 +72,13 @@
 
     #home-section h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(212, 153, 64);
+        color: rgb(255, 255, 255);
         font-size: 58px;
     }
     
     .clickable-box {
-        background-color: rgb(212, 153, 64);
-        border: 2px solid rgb(255, 241, 112);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
         padding: 10px;
         text-align: center;
         cursor: pointer;
@@ -76,58 +92,114 @@
         height: auto;
         border-radius: 8px;
     }
+
+    h4 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        color: white;
+    }
+
+    form {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+form input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form button[type="submit"] {
+    padding: 8px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
     
 </style>
 </head>
 
 <body>
     <div class="header-container">
-        <img src="header.png" alt="FlavorFiesta Header">
+        <img src="header.jpg" alt="FlavorFiesta Header">
     </div>
+
+    <video autoplay muted loop id="background-video">
+        <source src="bgv1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     
     <nav class="navbar">
-        <a href="flavorfiestamain.html">Home</a>
-        <a href="allrecipes.html">All Recipes</a>
-        <a href="updatednewrecipes.html">Updated Recipes</a>
-        <a href="ingredients.html">Ingredients</a>
+        <a href="flavorfiestamain.html"><B>Home</B></a>
+        <a href="allrecipes.html"><b>All Recipes</b></a>
+        <a href="updatednewrecipes.html"><b>Updated Recipes</b></a>
+        <a href="ingredients.html"><b>Ingredients</b></a>
+        <a href="about.html"><b>About Us</b></a>
     </nav>
 
     <div class="content" id="home-section">
         <h1>Welcome to FlavorFiesta!</h1>
-        <div class="clickable-box" onclick="window.location='mechado.html'">
-            <img src="Mechado.jpg" alt="Description of the image">
-            <h2>Mechadong Baboy</h2>
-            <p>Mechadong Baboy or Pork mechado is a type of Filipino pork stew. It is cooked in a tomato-based sauce. </p>
+
+        <h4>FlavorFiesta, your one-stop portal to the vibrant world of Filipino cuisine! <br>
+            Immerse yourself in a delightful journey where you'll uncover a treasure trove of authentic recipes, 
+            <br>each waiting to tantalize your taste buds and transport you to the heart of the Philippines.</h4>
+
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search for a recipe...">
+                <button type="submit">Search</button>
+            </form>
+
+        <div class="clickable-box" onclick="window.location='asado.html'">
+            <img src="asado.jpg" alt="Description of the image">
+            <h2>Beef Asado Recipe</h2>
+            <p>Beef Asado is a piquant Filipino beef stew version. This dish originated from Central Luzon in the Philippines. </p>
             </div>
 
-        <div class="clickable-box" onclick="window.location='adobongbaboy.html'">
-            <img src="Adobo.jpg" alt="Description of the image">
-            <h2>Adobong Baboy</h2>
-            <p>It is a dish composed of pork slices cooked in soy sauce, vinegar, and garlic. Popular dish in PH.</p>
+        <div class="clickable-box" onclick="window.location='chickentinola.html'">
+            <img src="chickentinola.jpg" alt="Description of the image">
+            <h2>Chicken Tinola</h2>
+            <p>Chicken Tinola is a Filipino soup dish that is easy to make and is perfect for cold weather. </p>
         </div>
 
-        <div class="clickable-box" onclick="window.location='tinolangmanok.html'">
-            <img src="Tinola.jpg" alt="Description of the image">
-            <h2>Tinolang Manok</h2>
-            <p>A great tasting and healthy dish to prepare. It is easy to cook and friendly on the budget.</p>
+        <div class="clickable-box" onclick="window.location='salmonwithdillsauce.html'">
+            <img src="salmonwithdillsauce.jpg" alt="Description of the image">
+            <h2>Salmon With Dill Sauce & Lemon Risotto</h2>
+        
             </div>
 
-        <div class="clickable-box" onclick="window.location='cordonbleu.html'">
-            <img src="Cordon.jpg" alt="Description of the image">
-            <h2>Cordon Bleu</h2>
-            <p>A dish composed of chicken breasts, ham, and Swiss cheese.
-                Rolled together then dredged in bread crumbs.
+        <div class="clickable-box" onclick="window.location='Bicol Express Gising-Gising.html'">
+            <img src="Bicol Express Gising-Gising.jpg" alt="Description of the image">
+            <h2>Bicol Express Gising-Gising</h2>
+            <p>Bicol Express Gising-gising lovingly mixes that chili pepper into our stew, which helps that heat latch on to the meat and other ingredients amazingly.
             </p>
         </div>
 
-        <div class="clickable-box" onclick="window.location='dynamite.html'">
-            <img src="Dynamite.jpg" alt="Description of the image">
-            <h2>Dynamite Lumpia</h2>
-            <p>A version of the popular Filipino deep-fried egg rolls. 
-                It involves the use of stuffed long green chili.
+        <div class="clickable-box" onclick="window.location='Pork Sinigang.html'">
+            <img src="Pork Sinigang.jpg" alt="Description of the image">
+            <h2>Pork Sinigang</h2>
+            <p>Sinigang na Baboy is the ultimate comfort food! 
+                Sinigang is a classic Filipino soup characterized by its sour and savory medley of flavors.
             </p>
         </div>
     </div>
+
+    <script>
+        function searchRecipe() {
+            // Get the value of the search input
+            var searchQuery = document.getElementById("search-input").value;
+            // Redirect to the search results page passing the search query as parameter
+            window.location = "search.html?q=" + encodeURIComponent(searchQuery);
+        }
+    </script>
 </body>
 
 </html>

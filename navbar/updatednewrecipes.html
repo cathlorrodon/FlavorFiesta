@@ -6,51 +6,67 @@
 <title>FlavorFiesta</title>
 <style>
     body {
-        background-color: rgb(255, 241, 112);
-        color: black;
-        margin: 0; /* Remove default margin */
-    }
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
     .header-container {
         text-align: center;
         padding: 10px;
-        background-color: rgb(212, 153, 64);
-        border-bottom: 2px solid rgb(241, 150, 29);
-        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        
         margin-bottom: 20px;
     }
 
     .header-container img {
         width: 100%;
-        height: 250px;
+        height: 185px;
         object-fit: cover;
-        border-radius: 30px; /* Maintain border-radius for consistency */
+        
     }
 
     nav {
         text-align: center;
         text-decoration: solid;
-        border: 2px solid rgb(241, 150, 29);
+        border: 3px solid rgb(0, 0, 0);
         padding: 10px;
-        border-radius: 15px;
+        margin-top: -20px;
     }
 
     .navbar {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 25px;
-        background-color: rgb(212, 153, 64);
+        background-color: rgb(255, 255, 255);
     }
 
     .navbar a {
-        color: rgb(255, 241, 112);
+        color: rgb(0, 0, 0);
         text-decoration: none;
         display: inline-block;
-        margin: 0 60px;
+        margin: 0 45px;
         cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
 #updatednewrecipes-section h2 {
-    color: rgb(212, 153, 64);
+    color: rgb(255, 255, 255);
     font-size: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -66,11 +82,14 @@
 .image-container {
     text-align: center;
     margin-top: 20px;
+    width: 80%;
+    margin-left: 130px;
 }
 
 .image-box {
-    border: 2px solid rgb(241, 150, 29);
-    border-radius: 15px;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
     overflow: hidden;
 }
@@ -85,6 +104,7 @@
 .image-box p {
     margin-left: 40%;
     font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -94,14 +114,20 @@
 
 <body>
     <div class="header-container">
-        <img src="header.png" alt="FlavorFiesta Header">
+        <img src="header.jpg" alt="FlavorFiesta Header">
     </div>
+
+    <video autoplay muted loop id="background-video">
+        <source src="bgv1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     
     <nav class="navbar">
-        <a href="flavorfiestamain.html">Home</a>
-        <a href="allrecipes.html">All Recipes</a>
-        <a href="updatednewrecipes.html">Updated Recipes</a>
-        <a href="ingredients.html">Ingredients</a>
+        <a href="flavorfiestamain.html"><B>Home</B></a>
+        <a href="allrecipes.html"><b>All Recipes</b></a>
+        <a href="updatednewrecipes.html"><b>Updated Recipes</b></a>
+        <a href="ingredients.html"><b>Ingredients</b></a>
+        <a href="about.html"><b>About Us</b></a>
     </nav>
 
     <div class="content" id="updatednewrecipes-section">
@@ -112,6 +138,12 @@
                 <a href="Crispy Pata.html"><img src="Crispy Pata.jpg" alt="Crispy Pata"></a>
                 <h3>Crispy Pata</h3>
                 <p>Crispy Pata or crispy pork leg is a popular Filipino pork dish. This dish can be eaten as a main dish along with rice and atcharang papaya.</p>
+            </div>
+
+            <div class="image-box">
+                <a href="Tokwat Baboy.html"><img src="Tokwat Baboy.jpg" alt="TokwatBaboy"></a>
+                <h3>Tokwa't Baboy</h3>
+                <p>Tokwat Baboy is a dish composed of boiled pork (either or both pig's ears and pork belly usually) and fried tofu. </p>
             </div>
         </div>
     </div>
